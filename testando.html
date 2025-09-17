@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pessoal</title>
+    <title>Testando</title>
     <link rel="stylesheet" href="testando.css">
 </head>
 <body>
     <div class="full">
         <!--Criando o Cabeçalho e seus componentes--->
         <header>
-            <nav class="barra">
+            <h1 style="font-size: 30px;" class="name"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
+            <nav class="barra" id="nav-bar">
                 <ul class="lista">
-                    <li><a href="#lado">HOME</a></li>
+                    <li><a href="#home">HOME</a></li>
                     <li><a href="#center">CENTER</a></li>
                 </ul>
-                <h1 style="font-size: 30px;"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
+                <h1 style="font-size: 30px;" class="lionel"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
                 <ul class="lista1">
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="portfolio.html">PORTFÓLIO</a></li>
                     <li><a href="#contacto">CONTACT</a></li>
                 </ul>
             </nav>
+            <button id="toggle-nav" class="btn_responsive">&#9776;</button>
         </header>
+        <div id="home"></div>
         <!--Criando os conteúdos laterais-->
         <aside id="lado">
             <div class="dive">
@@ -53,10 +56,10 @@
                 <div class="dive2_3">
                     <h2 style="text-align: center; color: honeydew;">Habilidades</h2> <br>
                     <ul>
-                        <li><span style="color: cornflowerblue;">Cargo: </span>Desenvolvidor Web</li> <br>
-                        <li><span style="color: cornflowerblue;">Categoria: </span>Full-Stack Pleno</li> <br>
+                        <li><span style="color: cornflowerblue;">Profissão: </span>Desenvolvidor Web</li> <br>
+                        <li><span style="color: cornflowerblue;">Categoria: </span>Full-Stack</li> <br>
                         <li><span style="color: cornflowerblue;">Lógica De Programação: </span>Avançado</li> <br>
-                        <li><span style="color: cornflowerblue;">Proficiência No Inglês: </span>Intermediário (B2)</li> <br>
+                        <li><span style="color: cornflowerblue;">Proficiência No Inglês: </span>Intermediário (B1)</li> <br>
                     </ul>
                 </div>
                 <div class="dive2_4">
@@ -71,8 +74,8 @@
             <section>
                 <div class="div_mae">
                     <div class="div_titulo"><h2 style="text-align: center; color: black">Formação Acadêmica</h2></div> <br>
-                        <ul style="margin: 30px;">
-                            <li><span style="color: cornflowerblue;">Nível Acadêmico: </span>Semi-Finalista Do Ensino Médio</li> <br>
+                        <ul style="margin: 0px 30px;">
+                            <li><span style="color: cornflowerblue;">Nível Acadêmico: </span>Finalista Do Ensino Médio</li> <br>
                             <li><span style="color: cornflowerblue;">Instituição: </span>Instituto Politécnico Privado Felizander</li> <br>
                             <li><span style="color: cornflowerblue;">Curso: </span>Informática De Gestão</li> <br>
                         </ul>
@@ -82,7 +85,7 @@
             <section>
                 <div class="div_mae">
                     <div class="div_titulo"><h2 style="text-align: center; color: black;">Habilidades & Competências</h2></div>
-                    <div style="width: 45%; height: auto; padding: 15px 40px;">
+                    <div style="width: 45%; height: auto; padding: 15px 40px;" class="ferramenta">
                         <h3 style="text-align: center; color: honeydew;">Linguagens De Programação</h3> <br>
                         <ul>
                             <li>Linguagem C</li>
@@ -90,21 +93,21 @@
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
-                            <li>PHP</li>
+                            <li>PHP (Com Laravel)</li>
                             <li>SQL</li>
                         </ul>
                     </div>
 
                     <div style="width: 1px; height: 180px; background: honeydew; margin-top: 20px;"></div>
 
-                    <div style="width: 45%; height: auto; padding: 15px 40px;">
+                    <div style="width: 45%; height: auto; padding: 15px 40px;" class="ferramenta">
                         <h3 style="text-align: center; color: honeydew;">Ferramentas De Gestão</h3> <br>
                         <ul>
                             <li>Microsoft Word</li>
                             <li>Microsoft Excel</li>
                             <li>Microsoft Publish</li>
                             <li>Microsoft Outlook</li>
-                            <li>Git (Para Versionamento)</li>
+                            <li>GitHub Desktop e Git (Para Versionamento)</li>
                             <li>GitHub (Para Hospedagem)</li>
                             <li>MySQL Workbench</li>
                         </ul>
@@ -117,54 +120,10 @@
                 <div class="div_mae" style="justify-content: space-around;">
                     
                     <div class="div_titulo"><h2 style="text-align: center; color: black;">Meus Serviços</h2></div>
-                    <div class="pacote" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;">
-                        <h2 style="text-align: center;">Pacote Básico</h2>
-                        <h3 style="text-align: center;">Presença Online</h3> <br>
-                        <ul>
-                            <li>Site Institucional (Até 4 páginas: Home, Sobre, Serviços e Contactos)</li> <br>
-                            <li>Design Moderno & Responsivo (PC e Celulares)</li> <br>
-                            <li>Integração Com WhatsApp</li> <br>
-                            <li>Prazo Médio: 5 à 7 Dias Úteis</li> <br>
-                            
-                        </ul>
-                    </div>
-                    <div class="pacote" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;">
-                        <h2 style="text-align: center;">Pacote Intermediário</h2>
-                        <h3 style="text-align: center;">Conversão</h3> <br>
-                        <ul>
-                            <li>Landing Page De Vendas Otimizada Para Anuúncios</li> <br>
-                            <li>Formulário De Captação De Leads (Via WhatsApp ou E-Mail)</li> <br>
-                            <li>Integração Com Redes Sociais</li> <br>
-                            <li>SEO Inicial (Otimização Para Aparecer Melhor Na Google)</li> <br>
-                            <li>Prazo Médio: 10 à 14 Dias Úteis</li> <br>
-                            
-                        </ul>
-                    </div>
-                    <div class="pacote" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                        <h2 style="text-align: center;">Pacote Avançado</h2>
-                        <h3 style="text-align: center;">Lojas Online</h3> <br>
-                        <ul>
-                            <li>Loja Virtual Completa (Até 50 Produtos)</li> <br>
-                            <li>Carrinho De Compras & Sistema De Pagamento</li> <br>
-                            <li>Painel Administrativo Simples</li> <br>
-                            <li>Chat De Atendimento Integrado (WhatsApp ou Chatbot)</li> <br>
-                            <li>Treinamento Rápido Para o Cliente Gerir a Loja</li> <br>
-                            <li>Prazo Médio: 15 à 21 Dias Úteis</li> <br>
-                            
-                        </ul>
-                    </div>
-                    <div class="pacote" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
-                        <h2 style="text-align: center;">Pacote Premium</h2>
-                        <h3 style="text-align: center;">Presença Digital Completa</h3> <br>
-                        <ul>
-                            <li>Blog Integrado (Para Marketing De Conteúdo)</li> <br>
-                            <li>Área De Membros ou Agendamento Online</li> <br>
-                            <li>SEO Avançado</li> <br>
-                            <li>Relatórios De Visitas (Google Analytics)</li> <br>
-                            <li>Manutenção Gratuita Por Um Mês</li> <br>
-                            <li>Prazo Médio: 25 à 30 Dias Úteis</li> <br>
-                            
-                        </ul>
+                    <div class="servico">
+
+                        <img src="Imagens/dotes/cópia_oficial.jpg" alt="erro" class="img_servico">
+                        
                     </div>
                     
                 </div>
@@ -178,13 +137,13 @@
 
             <div style="width: 400px; height: 300px; border: 1px solid black; padding: 10px; border-radius: 10px; box-shadow: 5px 10px 10px black;">
                 <h2 style="text-align: center; color: yellowgreen;">Contactos</h2> <br>
-                <p style="color: black; font-weight: bold;">
+                <p style="color: aliceblue; font-weight: bold;">
                      ☎Tell: 948 972 536 /950 030 201 <br>
                      ✉E-mail: lionelgomes084@gmail.com <br>
                     <br>
                 </p> 
                 <h2 style="text-align: center; color: yellowgreen;">Redes Sociais</h2>
-                <p style="color: black; font-weight: bold;">
+                <p style="color: aliceblue; font-weight: bold;">
                    <br>
                     🌐Facebook: Lionel André <br>
                     
@@ -204,8 +163,8 @@
                 <form id="whatsappForm" style="display: flex; flex-wrap: wrap; width: 300px; height: 50%;">
                     <div style="width: 100%; height: 100%; display: flex;">
                         <div style="width: 30%; height: auto; padding: 18px 5px;">
-                            <label for="">Nome:</label> <br> <br>
-                            <label for="">Mensagem:</label>
+                            <label for="" style="color: aliceblue;">Nome:</label> <br> <br>
+                            <label for="" style="color: aliceblue;">Mensagem:</label>
                         </div>
                         <div style="width: 65%; height: auto;">
                             <input type="text" id="mensagem" placeholder="Infome o seu nome" required>

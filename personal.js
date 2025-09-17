@@ -6,3 +6,9 @@
       const numero = '244948972536'; // Inclua o código do país (244 para Angola, por exemplo)
       window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
     });
+
+
+    document.getElementById("toggle-nav").addEventListener("click", function(){
+    let navbar = document.getElementById("nav-bar");
+    navbar.classList.toggle("show");
+});
