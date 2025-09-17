@@ -10,7 +10,7 @@
     <div class="full">
         <!--Criando o Cabeçalho e seus componentes--->
         <header>
-            <h1 style="font-size: 30px;" class="name"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
+            <h1 style="font-size: 20px;" class="name"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
             <nav class="barra" id="nav-bar">
                 <ul class="lista">
                     <li><a href="#home">HOME</a></li>
@@ -85,7 +85,7 @@
             <section>
                 <div class="div_mae">
                     <div class="div_titulo"><h2 style="text-align: center; color: black;">Habilidades & Competências</h2></div>
-                    <div style="width: 45%; height: auto; padding: 15px 40px;" class="ferramenta">
+                    <div class="ferramenta">
                         <h3 style="text-align: center; color: honeydew;">Linguagens De Programação</h3> <br>
                         <ul>
                             <li>Linguagem C</li>
@@ -98,9 +98,9 @@
                         </ul>
                     </div>
 
-                    <div style="width: 1px; height: 180px; background: honeydew; margin-top: 20px;"></div>
+                    <div class="separa"></div>
 
-                    <div style="width: 45%; height: auto; padding: 15px 40px;" class="ferramenta">
+                    <div class="ferramenta">
                         <h3 style="text-align: center; color: honeydew;">Ferramentas De Gestão</h3> <br>
                         <ul>
                             <li>Microsoft Word</li>
@@ -135,7 +135,7 @@
         </main>
         <footer id="contacto">
 
-            <div style="width: 400px; height: 300px; border: 1px solid black; padding: 10px; border-radius: 10px; box-shadow: 5px 10px 10px black;">
+            <div class="contacto">
                 <h2 style="text-align: center; color: yellowgreen;">Contactos</h2> <br>
                 <p style="color: aliceblue; font-weight: bold;">
                      ☎Tell: 948 972 536 /950 030 201 <br>
@@ -158,20 +158,20 @@
                 
             </div>
 
-            <div style="width: 350px; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid black; box-shadow: 5px 10px 10px black; border-radius: 10px;">
+            <div class="whatsapp">
                 <h2 style="color: yellowgreen;">WhatsApp</h2> <br>
-                <form id="whatsappForm" style="display: flex; flex-wrap: wrap; width: 300px; height: 50%;">
+                <form id="whatsappForm" style="display: flex; flex-wrap: wrap; width: 100%; height: 50%;">
                     <div style="width: 100%; height: 100%; display: flex;">
-                        <div style="width: 30%; height: auto; padding: 18px 5px;">
+                        <div style="width: 30%; height: auto; padding: 18px 5px;" class="labels">
                             <label for="" style="color: aliceblue;">Nome:</label> <br> <br>
                             <label for="" style="color: aliceblue;">Mensagem:</label>
                         </div>
-                        <div style="width: 65%; height: auto;">
+                        <div class="inputs">
                             <input type="text" id="mensagem" placeholder="Infome o seu nome" required>
                             <textarea name="" id="nome" placeholder="Escreva a mensagem" required></textarea>
                         </div>
                     </div>
-                    <div style="width: 300px; height: 45px; display: flex; justify-content: space-around; padding: 6px;">
+                    <div style="width: 100%; height: 45px; display: flex; justify-content: space-around; padding: 6px;">
                         <button type="reset" class="btn">Cancelar</button>
                         <button type="submit" class="btn">Enviar</button>
                     </div>

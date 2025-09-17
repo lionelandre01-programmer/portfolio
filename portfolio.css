@@ -243,7 +243,97 @@ img:hover{
     background: aqua;
 }
 
-@media (max-width:670px){
+@media (max-width:400px){
+
+header{
+    height: 15vh;
+}
+
+.barra{
+    gap: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lista li a{
+    font-size: 10px;
+}
+
+
+.lista1{
+    display: none;
+}
+
+.lionel{
+    font-size: 20px;
+}
+
+.mae{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.mae_center{
+    display: none;
+}
+
+
+@keyframes mover {
+    0% {
+        width: 230px;
+    }
+    50%{
+        width: 20px;
+    }
+    100% {
+        width: 230px;
+    }
+}
+
+
+.content{
+    width: 100%;
+    height: 970px;
+
+}
+
+.decore{
+    display: none;
+}
+
+.decore_center{
+    display: none;
+}
+
+.stilizar{
+    height: 25%;
+    width: 13px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: aqua;
+}
+
+.second_stilizar{
+    height: 18%;
+    width: 9px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: aqua;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+@media (min-width: 400px) and (max-width:670px){
 
 header{
     height: 15vh;
