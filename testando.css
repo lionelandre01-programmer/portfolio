@@ -54,9 +54,6 @@ header{
 main{
     grid-area: principal;
     background: var(--cor-primaria);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border: 1px solid black;
     padding-top: 20vh;
 }
@@ -336,17 +333,12 @@ textarea{
     border-radius: 5px;
 }
 
-.exemplo_maior{
-    width: 55%;
-    height: 65%;
-}
-
-.exemplo{
-    width: 44%;
-    height: 148px;
-}
-
-.exemplo_baixo{
-    width: 55%;
-    height: 33%;
+.portfolio{
+    margin: 20vh 0px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: aliceblue;
 }
