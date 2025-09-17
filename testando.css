@@ -462,6 +462,8 @@ textarea{
 
     .name{
         display: block;
+        text-align: end;
+        margin-top: 20px;
     }
 
     .name span{
