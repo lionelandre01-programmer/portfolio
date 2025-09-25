@@ -15,3 +15,18 @@
   let navbar = document.getElementById("nav-bar");
   navbar.classList.toggle("show");
   });
+
+const elementos = document.querySelectorAll('*');
+
+
+function verificarVisibilidade(){
+        elementos.forEach(elemento =>{
+      const rect = elemento.getBoundingClientRect();
+      if (rect.top < window.innerHeight && !elemento.classList.contains('visivel')) {
+        elemento.classList.add('visivel');
+      }
+    });
+}
+
+  window.addEventListener('scroll', verificarVisibilidade);
+  verificarVisibilidade();

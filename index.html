@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="testando.css">
 </head>
 <body>
     <div class="full">
         <!--Criando o Cabeçalho e seus componentes--->
-        <header>
+        <header id="header">
             <h1 style="font-size: 20px;" class="name"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
             <nav class="barra" id="nav-bar">
                 <ul class="lista">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#center">CENTER</a></li>
+                    <li><a href="#"><i class="fa-solid fa-home"></i>HOME</a></li>
+                    <li><a href="#center"><i class="fa-solid fa-info"></i>CENTER</a></li>
                 </ul>
                 <h1 style="font-size: 30px;" class="lionel"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
                 <ul class="lista1">
-                    <li><a href="portfolio.html">PORTFÓLIO</a></li>
-                    <li><a href="#contacto">CONTACT</a></li>
+                    <li><a href="portfolio.html"><i class="fa-solid fa-folder-open"></i>PORTFÓLIO</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i>CONTACT</a></li>
                 </ul>
             </nav>
             <button id="toggle-nav" class="btn_responsive">&#9776;</button>
         </header>
-        <div id="home"></div>
         <!--Criando os conteúdos laterais-->
         <aside id="lado">
             <div class="dive">
@@ -70,8 +70,44 @@
 
         </aside>
         <main id="center">
-            <!--Apresentando a formação acadêmica-->
+            <!--Apresentando detalhes acerca de mim-->
             <section>
+
+            <section style="display: flex; flex-direction: column;">
+                <div class="div_mae">
+                    <div class="div_titulo" style="margin-bottom: 10px;">
+                        <h2 style="text-align: center; color: black">Acerca De Me</h2>
+                    </div> <br>
+                    <div style="width: 100%; height: 100%; padding: 0 20px;">
+                        <p>
+                            <h2 style="text-align: center; width: 100%;">Olá!</h2><br>
+                            Eu sou o Lionel André, um jovem apaixonado pela Programação, eventualmente 
+                            pela tecnologia também actualmente dedicando tempo e esforço ao desenvolvimento web.
+                            <br> <br>
+                            Trabalhando com linguagens como HTML, CSS, JavaScript, PHP, biblioteca
+                            React e framework Laravel, dedico-me bastante na criação de Sites e 
+                            Sistemas modernos, responsivos e totalmente funcionais.
+                            <br> <br>
+                            Focado em transformar ideias em aplicações web que oferecem experiência
+                            de uso simples, eficiente e visualmente agradável, trago soluções reais
+                            que por sua vez, atendem às diversas necessidades do mundo comercial.
+                            <br> <br>
+                            Além de desenvolver sites, também presto serviços de manutenção, integração,
+                            publicação de sites e muitos outros serviços, tal como é espelhado lá mais 
+                            a diante.
+                            <br> <br>
+                            Seja um site institucional, sistema de gestão, landing page ou lojas online,
+                            estou pronto para ajudar a elevar o seu projecto a um outro nível com
+                            qualidade e profissionalismo.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            </section>
+            <!--Apresentando a formação acadêmica-->
+            <section style="display: flex; flex-direction: column;">
                 <div class="div_mae">
                     <div class="div_titulo"><h2 style="text-align: center; color: black">Formação Acadêmica</h2></div> <br>
                         <ul style="margin: 0px 30px;">
@@ -80,39 +116,137 @@
                             <li><span style="color: cornflowerblue;">Curso: </span>Informática De Gestão</li> <br>
                         </ul>
                 </div>
+
             </section>
             <!--Apresentando as habilidades e competências-->
-            <section>
-                <div class="div_mae">
-                    <div class="div_titulo"><h2 style="text-align: center; color: black;">Habilidades & Competências</h2></div>
-                    <div class="ferramenta">
-                        <h3 style="text-align: center; color: honeydew;">Linguagens De Programação</h3> <br>
-                        <ul>
-                            <li>Linguagem C</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>PHP (Com Laravel)</li>
-                            <li>SQL</li>
-                        </ul>
+            
+            <section class="section_habilities">
+                <div class="div_titulo" style="margin-top: 30px;"><h2 style="text-align: center; color: black">Habilidades & Competências</h2></div> <br>
+
+                <div class="habilities">
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/HTML.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>HTML 5</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 95%;"></div>
+                        </div>
+                        <h3>95%</h3>
                     </div>
 
-                    <div class="separa"></div>
-
-                    <div class="ferramenta">
-                        <h3 style="text-align: center; color: honeydew;">Ferramentas De Gestão</h3> <br>
-                        <ul>
-                            <li>Microsoft Word</li>
-                            <li>Microsoft Excel</li>
-                            <li>Microsoft Publish</li>
-                            <li>Microsoft Outlook</li>
-                            <li>GitHub Desktop e Git (Para Versionamento)</li>
-                            <li>GitHub (Para Hospedagem)</li>
-                            <li>MySQL Workbench</li>
-                        </ul>
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/javascript.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 90%;"></div>
+                        </div>
+                        <h3>90%</h3>
                     </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/CSS3.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>CSS 3</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 90%;"></div>
+                        </div>
+                        <h3>90%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/PHP.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>PHP</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 90%;"></div>
+                        </div>
+                        <h3>90%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/Python.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>Python</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 85%;"></div>
+                        </div>
+                        <h3>85%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/Laravel.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>Laravel</h4>
+                        <div class="percent">
+                            <div class="grau"></div>
+                        </div>
+                        <h3>80%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/Linguagem C.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>Linguagem C</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 90%;"></div>
+                        </div>
+                        <h3>90%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/MySQL.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>MySQL</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 90%;"></div>
+                        </div>
+                        <h3>90%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/GitHub.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>Git e GitHub</h4>
+                        <div class="percent">
+                            <div class="grau" style="width: 90%;"></div>
+                        </div>
+                        <h3>90%</h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="img">
+                            <img src="Imagens/dotes/React.jpg" alt="erro"
+                            style="width: 100%; height: 100%;">
+                        </div>
+                        <h4>React</h4>
+                        <div class="percent">
+                            <div class="grau"></div>
+                        </div>
+                        <h3>80%</h3>
+                    </div>
+
                 </div>
+
             </section>
             <!--Apresentando os meus serviços-->
             <section>
@@ -129,32 +263,43 @@
                 </div>
 
             </section>
-
-            <section></section>
       
         </main>
         <!--Apresentando os métodos para contactar-me-->
         <footer id="contacto">
 
+                <div style="
+                width: 30px; 
+                height: 30px; 
+                border-radius: 50%; 
+                background-color: cornsilk;
+                color: black; 
+                display: flex; 
+                position: absolute; 
+                align-self: self-start;
+                right: 10px; 
+                align-items: center; 
+                justify-content: center;">
+                <a href="#header" style="color: black; text-decoration: none;">🔺</a></div>
+
             <div class="contacto">
                 <h2 style="text-align: center; color: yellowgreen;">Contactos</h2> <br>
                 <p style="color: aliceblue; font-weight: bold;">
-                     ☎Tell: 948 972 536 /950 030 201 <br>
-                     ✉E-mail: lionelgomes084@gmail.com <br>
+                     <i class="fa-solid fa-phone"></i> 948 972 536 /950 030 201 <br>
+                     <i class="fa-solid fa-envelope"></i> lionelgomes084@gmail.com <br>
                     <br>
                 </p> 
                 <h2 style="text-align: center; color: yellowgreen;">Redes Sociais</h2>
                 <p style="color: aliceblue; font-weight: bold;">
                    <br>
-                    🌐Facebook: Lionel André <br>
+                    <i class="fa-brands fa-facebook"></i> Lionel André <br>
                     
-                    🌐Instagram: @lionelgomes_oficial <br>
+                    <i class="fa-brands fa-instagram"></i> @lionelgomes_oficial <br>
                     
-                    📳WhatsApp: 948 972 536 <br>
+                    <i class="fa-brands fa-whatsapp"></i> 948 972 536 <br>
                     
-                    🕊Twitter: lionelandre_official <br>
-                    
-                    🌐Google: lionelgomes084@gmail.com <br>
+                    <i class="fa-brands fa-linkedin"></i> Lionel André <br>
+
                 </p>
                 
             </div>
