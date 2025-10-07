@@ -3,14 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    opacity: 0;
-    transform: scale(0.5) translateY(100px);
-    transition: opacity 5s, transform 5s;
-}
-
-*.visivel {
-    opacity: 1;
-    transform: scale(1) translateY(0);
 }
 
 /* Variáveis de cores escuras */
@@ -44,17 +36,6 @@ body{
     "principal principal"
     "foot foot"
     ;
-}
-
-.elemento{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 00.5s, transform 00.5s;
-}
-
-.elemento.visivel{
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Estilizando o header */
@@ -517,6 +498,14 @@ textarea{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .lista li{
+        transition: 2s;
+    }
+
+    .lista li:hover{
+        font-size: 10px;
     }
 
     .lionel{
