@@ -25,7 +25,6 @@ Criar uma presença online que permita:
 ## 🖼️ Demonstração
 
 ➡️ **Acesse aqui:** https://lionelandre01-programmer.github.io/portfolio/
-Exemplo: `https://meu-portfolio.com`
 
 ---
 
@@ -42,9 +41,9 @@ Exemplo: `https://meu-portfolio.com`
 
 Caso queira entrar em contato:
 
-- **Email:** _adicione aqui_
-- **LinkedIn:** _adicione aqui_
-- **GitHub:** _adicione aqui_
+- **Email:** lionelgomes084@gmail.com
+- **LinkedIn:** Lionel André
+- **GitHub:** lionel01-programmer
 
 ---
 
