@@ -24,7 +24,7 @@ Criar uma presença online que permita:
 
 ## 🖼️ Demonstração
 
-➡️ **Acesse aqui:** _adicione o link quando publicar_  
+➡️ **Acesse aqui:** https://lionelandre01-programmer.github.io/portfolio/
 Exemplo: `https://meu-portfolio.com`
 
 ---
