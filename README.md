@@ -1,32 +1,52 @@
-# Portfolio — Lionel Cristóvão André
+# 🌐 Meu Portfólio Pessoal
 
-Site pessoal/portfólio estático que apresenta informações profissionais, habilidades e projetos em destaque.
+Este é o repositório do meu portfólio pessoal, desenvolvido com foco em simplicidade, performance e boa experiência de navegação.  
+Aqui apresento um pouco sobre mim, minhas habilidades e alguns projetos que já desenvolvi.
 
-## Tecnologias
-- HTML5, CSS3, JavaScript
-- Bootstrap 5 (CDN)
-- Font Awesome (CDN)
+---
 
-## Estrutura do projeto
-- index.html — Página principal do portfólio.  
-- style.css — Estilos personalizados e regras de responsividade.  
-- script.js — Comportamento: navbar encolhendo, animação de entrada (Scroll Reveal) e envio via WhatsApp.  
-- imagens/ — Imagens usadas pelo site (foto de perfil e screenshots).
+## 🚀 Tecnologias Utilizadas
 
-## Como usar
-1. Abrir o arquivo [index.html](index.html) em um navegador moderno.  
-2. O projeto usa CDN para Bootstrap e Font Awesome — é necessário conexão com a internet para carregar essas dependências.  
-3. Para testar o formulário de contato, preencha e envie; o botão abre o WhatsApp com a mensagem formatada.
+- **HTML5** — Estrutura da página  
+- **CSS3** — Estilização e layout responsivo  
+- **JavaScript** — Interatividade e dinamismo  
 
-## Personalização rápida
-- Trocar a foto de perfil em `imagens/Passe.png` ou ajustar entrada em [index.html](index.html).  
-- Atualizar o número de WhatsApp editando a constante [`numero`](script.js) em [script.js](script.js).  
-- Ajustar textos e projetos diretamente em [index.html](index.html).  
-- Estilos e animações podem ser alterados em [style.css](style.css).
+---
 
-## Notas técnicas
-- A animação de entrada usa a implementação em [script.js](script.js) que observa as seções (`sections`) com um [`IntersectionObserver`](script.js).  
-- O formulário com id `whatsapp` tem um handler de envio definido em [script.js](script.js).
+## 🎯 Objetivo do Projeto
 
-## Licença
-Conteúdo do repositório livre para uso pessoal e para demonstração de portfólio.
+Criar uma presença online que permita:
+- Mostrar minha trajetória e habilidades
+- Expor meus projetos e estudos
+- Ser um ponto de contacto profissional
+
+---
+
+## 🖼️ Demonstração
+
+➡️ **Acesse aqui:** https://lionelandre01-programmer.github.io/portfolio/
+
+---
+
+## ✨ Funcionalidades
+
+- Layout adaptado para dispositivos móveis (responsivo)
+- Secção de apresentação (sobre mim)
+- Lista de projetos e habilidades
+- Botões de contacto/redes sociais
+
+---
+
+## 💬 Contato
+
+Caso queira entrar em contato:
+
+- **Email:** lionelgomes084@gmail.com
+- **LinkedIn:** Lionel André
+- **GitHub:** lionel01-programmer
+
+---
+
+## 📝 Licença
+
+Este projeto é de uso pessoal, mas podes usar como inspiração para criar o teu portfólio.
