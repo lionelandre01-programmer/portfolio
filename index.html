@@ -1,335 +1,203 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pessoal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="testando.css">
+    <title> Lionel Cristóvão André - Desenvolvedor Full-Stack Pleno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="full">
-        <!--Criando o Cabeçalho e seus componentes--->
-        <header id="header">
-            <h1 style="font-size: 20px;" class="name"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
-            <nav class="barra" id="nav-bar">
-                <ul class="lista">
-                    <li><a href="#"><i class="fa-solid fa-home"></i>HOME</a></li>
-                    <li><a href="#center"><i class="fa-solid fa-info"></i>CENTER</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">Lionel Cristóvão André</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
-                <h1 style="font-size: 30px;" class="lionel"><span style="color: white;">LIONEL </span><span style="color: rgb(197, 197, 197);"> CRISTÓVÃO </span><span style="color: black;"> ANDRÉ</span></h1>
-                <ul class="lista1">
-                    <li><a href="portfolio.html"><i class="fa-solid fa-folder-open"></i>PORTFÓLIO</a></li>
-                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i>CONTACT</a></li>
-                </ul>
-            </nav>
-            <button id="toggle-nav" class="btn_responsive">&#9776;</button>
-        </header>
-        <!--Criando os conteúdos laterais-->
-        <aside id="lado">
-            <div class="dive">
-
-                <img src="Imagens/Minha_Imagem/Better.jpg" alt="erro" class="first_img">
-
             </div>
+        </div>
+    </nav>
 
-        </aside>
-        <aside class="lado">
-            
-            <div class="dive2">
-
-                <div class="dive2_1">
-                    <img src="Imagens/dotes/SobreMe.jpg" alt="erro" class="img_dive2_1">
+    <main>
+        <section id="hero" class="d-flex align-items-center justify-content-center text-center bg-primary text-white" style="min-height: 100vh;">
+            <div class="container">
+                <div id="foto" class="card h-100 p-3 shadow-sm">
+                    <img src="imagens/Passe.png" alt="perfil de lionel andré" class="img-fluid rounded-circle mb-3" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-            <!--Apresentando dados pessoais e Habilidades Básicas-->
-                <div class="dive2_2">
-                    <p>
-                        <h2 style="text-align: center; color: honeydew;">Dados Pessoais</h2> <br>
-                    <span style="color: cornflowerblue;">Nome Completo: </span>Lionel Cristóvão André<br>
-                    <span style="color: cornflowerblue;">Data De Nascimento: </span>01 /03 /2005 <br>
-                    <span style="color: cornflowerblue;">Endereço: </span>Viana, Luanda, Angola <br>
-                    <span style="color: cornflowerblue;">Nacional De: </span>Angola <br>
-                    <span style="color: cornflowerblue;">Natural De: </span>Luanda <br>
-                    </p>
-                </div>
-                <div style="width: 100%; height: 4px; background: whitesmoke;"></div>
-                <div class="dive2_3">
-                    <h2 style="text-align: center; color: honeydew;">Habilidades</h2> <br>
-                    <ul>
-                        <li><span style="color: cornflowerblue;">Profissão: </span>Desenvolvidor Web</li> <br>
-                        <li><span style="color: cornflowerblue;">Categoria: </span>Full-Stack</li> <br>
-                        <li><span style="color: cornflowerblue;">Lógica De Programação: </span>Avançado</li> <br>
-                        <li><span style="color: cornflowerblue;">Proficiência No Inglês: </span>Intermediário (B1)</li> <br>
-                    </ul>
-                </div>
-                <div class="dive2_4">
-                    <img src="Imagens/dotes/fullstack.jpg" alt="erro" class="img_dive2_4">
-                </div>
-
+                <h1 class="display-1 fw-bold"> Lionel Cristóvão André</h1>
+                <p class="lead mb-4">Desenvolvedor Web Full-Stack Pleno | Especialista em Python/Django & PHP/Laravel</p>
+                <a href="#portfolio" class="btn btn-light btn-lg me-3">Ver Projetos</a>
+                <a href="#contato" class="btn btn-outline-light btn-lg">Fale Comigo</a>
             </div>
+        </section>
 
-        </aside>
-        <main id="center">
-            <!--Apresentando detalhes acerca de mim-->
-            <section>
-
-            <section style="display: flex; flex-direction: column;">
-                <div class="div_mae">
-                    <div class="div_titulo" style="margin-bottom: 10px;">
-                        <h2 style="text-align: center; color: black">Acerca De Me</h2>
-                    </div> <br>
-                    <div style="width: 100%; height: 100%; padding: 0 20px;">
-                        <p>
-                            <h2 style="text-align: center; width: 100%;">Olá!</h2><br>
-                            Eu sou o Lionel André, um jovem apaixonado pela Programação, eventualmente 
-                            pela tecnologia também actualmente dedicando tempo e esforço ao desenvolvimento web.
-                            <br> <br>
-                            Trabalhando com linguagens como HTML, CSS, JavaScript, PHP, biblioteca
-                            React e framework Laravel, dedico-me bastante na criação de Sites e 
-                            Sistemas modernos, responsivos e totalmente funcionais.
-                            <br> <br>
-                            Focado em transformar ideias em aplicações web que oferecem experiência
-                            de uso simples, eficiente e visualmente agradável, trago soluções reais
-                            que por sua vez, atendem às diversas necessidades do mundo comercial.
-                            <br> <br>
-                            Além de desenvolver sites, também presto serviços de manutenção, integração,
-                            publicação de sites e muitos outros serviços, tal como é espelhado lá mais 
-                            a diante.
-                            <br> <br>
-                            Seja um site institucional, sistema de gestão, landing page ou lojas online,
-                            estou pronto para ajudar a elevar o seu projecto a um outro nível com
-                            qualidade e profissionalismo.
-                        </p>
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">👋 Sobre Mim</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <p class="text-muted">Como Desenvolvedor Full-Stack Pleno, eu trago 1 ano de experiência no desenvolvimento e manutenção de aplicações web robustas, escaláveis e eficientes, cobrindo todo o ciclo de vida do software. Minha experiência abrange desde o design de interfaces (UI/UX) até a otimização de performance no Back-End e gerenciamento de bases de dados.</p>
+                        <p class="text-muted">Minha missão: Transformar requisitos complexos em soluções de software de alto impacto, utilizando as melhores práticas em **Django, Laravel e React** para entregar valor contínuo e qualidade de código.</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-            </section>
+        <section id="habilidades" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">🛠 Minhas Habilidades Técnicas</h2>
 
-            </section>
-            <!--Apresentando a formação acadêmica-->
-            <section style="display: flex; flex-direction: column;">
-                <div class="div_mae">
-                    <div class="div_titulo"><h2 style="text-align: center; color: black">Formação Acadêmica</h2></div> <br>
-                        <ul style="margin: 0px 30px;">
-                            <li><span style="color: cornflowerblue;">Nível Acadêmico: </span>Finalista Do Ensino Médio</li> <br>
-                            <li><span style="color: cornflowerblue;">Instituição: </span>Instituto Politécnico Privado Felizander</li> <br>
-                            <li><span style="color: cornflowerblue;">Curso: </span>Informática De Gestão</li> <br>
-                        </ul>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <i class="fas fa-desktop fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Frontend</h5>
+                            <p class="card-text">Interfaces modernas e responsivas.</p>
+                            <ul class="list-unstyled">
+                                <li>React (Componentes, Hooks, Redux/Context)</li>
+                                <li>HTML5, CSS3, JavaScript</li>
+                                <li>Bootstrap (Design Responsivo)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <i class="fas fa-server fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Backend</h5>
+                            <p class="card-text">Lógica de negócio e APIs robustas.</p>
+                            <ul class="list-unstyled">
+                                <li>Python (Django, Django REST Framework)</li>
+                                <li>PHP (Laravel, Lumen)</li>
+                                <li>C, C# (Lógica, Sistemas de Baixo Nível/APIs)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <i class="fas fa-code-branch fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Outras & Ferramentas</h5>
+                            <p class="card-text">Ferramentas essenciais para o Full-Stack.</p>
+                            <ul class="list-unstyled">
+                                <li>Git/GitHub</li>
+                                <li>SQL e Bancos de Dados Relacionais/NoSQL</li>
+                                <li>APIs RESTful e Integração</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-            </section>
-            <!--Apresentando as habilidades e competências-->
-            
-            <section class="section_habilities">
-                <div class="div_titulo" style="margin-top: 30px;"><h2 style="text-align: center; color: black">Habilidades & Competências</h2></div> <br>
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">🚀 Projetos em Destaque</h2>
+                <p class="text-center text-muted mb-5">Amostras do meu trabalho Full-Stack, demonstrando proficiência no Front-End (React, Bootstrap) e Back-End (Django, Laravel).</p>
 
-                <div class="habilities">
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/HTML.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>HTML 5</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 95%;"></div>
-                        </div>
-                        <h3>95%</h3>
+                <div class="row align-items-center mb-5 project-item">
+                    <div class="col-md-6 mb-3">
+                        <img src="imagens/img.jpeg" class="img-fluid rounded shadow" alt="Screenshot do Projeto 1">
                     </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/javascript.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>JavaScript</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 90%;"></div>
-                        </div>
-                        <h3>90%</h3>
+                    <div class="col-md-6">
+                        <h3>Sistema de Gerenciamento de Estoque (Full-Stack)</h3>
+                        <p class="text-muted">Um sistema complexo para gerenciar inventário, clientes e relatórios.</p>
+                        <p>Tecnologias: Laravel (PHP), Bootstrap, MySQL.</p>
+                        <p>Destaque: Demonstra conhecimento de CRUD complexo, autenticação via Token e integração de Back-End robusto com Front-End.</p>
+                        <a href="#" target="_blank" class="btn btn-primary me-2">Ver Demo</a>
+                        <a href="https://github.com/lionelandre01-programmer/projecto_de_gestao" target="_blank" class="btn btn-outline-secondary">Código (GitHub)</a>
                     </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/CSS3.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>CSS 3</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 90%;"></div>
-                        </div>
-                        <h3>90%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/PHP.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>PHP</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 90%;"></div>
-                        </div>
-                        <h3>90%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/Python.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>Python</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 85%;"></div>
-                        </div>
-                        <h3>85%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/Laravel.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>Laravel</h4>
-                        <div class="percent">
-                            <div class="grau"></div>
-                        </div>
-                        <h3>80%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/Linguagem C.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>Linguagem C</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 90%;"></div>
-                        </div>
-                        <h3>90%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/MySQL.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>MySQL</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 90%;"></div>
-                        </div>
-                        <h3>90%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/GitHub.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>Git e GitHub</h4>
-                        <div class="percent">
-                            <div class="grau" style="width: 90%;"></div>
-                        </div>
-                        <h3>90%</h3>
-                    </div>
-
-                    <div class="content">
-                        <div class="img">
-                            <img src="Imagens/dotes/React.jpg" alt="erro"
-                            style="width: 100%; height: 100%;">
-                        </div>
-                        <h4>React</h4>
-                        <div class="percent">
-                            <div class="grau"></div>
-                        </div>
-                        <h3>80%</h3>
-                    </div>
-
                 </div>
-
-            </section>
-            <!--Apresentando os meus serviços-->
-            <section>
-
-                <div class="div_mae" style="justify-content: space-around;">
-                    
-                    <div class="div_titulo"><h2 style="text-align: center; color: black;">Meus Serviços</h2></div>
-                    <div class="servico">
-
-                        <img src="Imagens/dotes/cópia_oficial.jpg" alt="erro" class="img_servico">
-                        
-                    </div>
-                    
-                </div>
-
-            </section>
-      
-        </main>
-        <!--Apresentando os métodos para contactar-me-->
-        <footer id="contacto">
-
-                <div style="
-                width: 30px; 
-                height: 30px; 
-                border-radius: 50%; 
-                background-color: cornsilk;
-                color: black; 
-                display: flex; 
-                position: absolute; 
-                align-self: self-start;
-                right: 10px; 
-                align-items: center; 
-                justify-content: center;">
-                <a href="#header" style="color: black; text-decoration: none;">🔺</a></div>
-
-            <div class="contacto">
-                <h2 style="text-align: center; color: yellowgreen;">Contactos</h2> <br>
-                <p style="color: aliceblue; font-weight: bold;">
-                     <i class="fa-solid fa-phone"></i> 948 972 536 /950 030 201 <br>
-                     <i class="fa-solid fa-envelope"></i> lionelgomes084@gmail.com <br>
-                    <br>
-                </p> 
-                <h2 style="text-align: center; color: yellowgreen;">Redes Sociais</h2>
-                <p style="color: aliceblue; font-weight: bold;">
-                   <br>
-                    <i class="fa-brands fa-facebook"></i> Lionel André <br>
-                    
-                    <i class="fa-brands fa-instagram"></i> @lionelgomes_oficial <br>
-                    
-                    <i class="fa-brands fa-whatsapp"></i> 948 972 536 <br>
-                    
-                    <i class="fa-brands fa-linkedin"></i> Lionel André <br>
-
-                </p>
                 
-            </div>
-            <!--formulário para o envio de mensagens pelo whatsApp-->
-            <div class="whatsapp">
-                <h2 style="color: yellowgreen;">WhatsApp</h2> <br>
-                <form id="whatsappForm" style="display: flex; flex-wrap: wrap; width: 100%; height: 50%;">
-                    <div style="width: 100%; height: 100%; display: flex;">
-                        <div style="width: 30%; height: auto; padding: 18px 5px;" class="labels">
-                            <label for="" style="color: aliceblue;">Nome:</label> <br> <br>
-                            <label for="" style="color: aliceblue;">Mensagem:</label>
-                        </div>
-                        <div class="inputs">
-                            <input type="text" id="nome" placeholder="Infome o seu nome" required>
-                            <textarea name="" id="mensagem" placeholder="Escreva a mensagem" required></textarea>
-                        </div>
-                    </div>
-                    <div style="width: 100%; height: 45px; display: flex; justify-content: space-around; padding: 6px;">
-                        <button type="reset" class="btn">Cancelar</button>
-                        <button type="submit" class="btn">Enviar</button>
-                    </div>
-                </form>
-            </div>
+                <hr>
 
-            <div style="width: 100%; height: 50px;">
-                <h2 style="text-align: center; color: black;"><u>@lionelandreoficial</u></h2>
-            </div>
+                <div class="row align-items-center flex-row-reverse mb-5 project-item">
+                    <div class="col-md-6 mb-3">
+                        <img src="imagens/alunos.jpeg" class="img-fluid rounded shadow" alt="Screenshot do Projeto 2">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Sistema Full-Stack de Gestão de Alunos</h3>
+                        <p class="text-muted">Desenvolvimento de um sistema acadêmico de alta performance e baixo acoplamento para lidar com as dificuldades de gestão de alunos.</p>
+                        <p>Tecnologias: Django (PYTHON), HTML, CSS, JavaScript, SQLite.</p>
+                        <p>Destaque: Foco em Back-End, otimização de processos de gestão e arquitetura robusta.</p>
+                        <a href="https://github.com/lionelandre01-programmer" target="_blank" class="btn btn-primary me-2">Ver Docs</a>
+                        <a href="https://github.com/lionelandre01-programmer" target="_blank" class="btn btn-outline-secondary">Código (GitHub)</a>
+                    </div>
+                </div>
+                
+                <hr>
 
-        </footer>
-    </div>
+                 <div class="row align-items-center mb-5 project-item">
+                    <div class="col-md-6 mb-3">
+                        <img src="imagens/IMG-20250828-WA0022.jpg" class="img-fluid rounded shadow" alt="Screenshot do Projeto 3">
+                        <img src="imagens/lionandre.jpg" class="img-fluid rounded shadow" alt="Screenshot do Projeto 3">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Landing Page Interativa</h3>
+                        <p class="text-muted">Landing Page de alta conversão, com animações e validações de formulário puras.</p>
+                        <p>Tecnologias: HTML, CSS, JavaScript Puro, Bootstrap.</p>
+                        <p>Destaque: Demonstra proficiência em Front-End sem frameworks pesados, focando em performance e UX (User Experience) básica, usando o Bootstrap para layout.</p>
+                        <a href="#" target="_blank" class="btn btn-primary me-2">Ver Live</a>
+                        <a href="https://github.com/lionelandre01-programmer/LandingPage_Lionandre" target="_blank" class="btn btn-outline-secondary">Código (GitHub)</a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="https://github.com/lionelandre01-programmer" target="_blank" class="btn btn-lg btn-secondary">Ver Mais Projetos no GitHub <i class="fab fa-github ms-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center mb-5">📧 Entre em Contato</h2>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <p class="text-center mb-4">Interessado em um projeto ou colaboração? Mande uma mensagem!</p>
+                        <form id="whatsapp">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Seu Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Seu E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <p>Ou me encontre em:</p>
+                    <a href="https://www.linkedin.com/in/lionelandre01/" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/lionelandre01-programmer" target="_blank" class="btn btn-outline-light me-2"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="mailto:lionelandre01@gmail.com" class="btn btn-outline-light"><i class="fas fa-envelope"></i> E-mail</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white-50 text-center py-3">
+        <p>&copy; 2024 Lionel André. Desenvolvido com HTML, CSS, JavaScript e Bootstrap.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
 </body>
-<script src="personal.js"></script>
 </html>
